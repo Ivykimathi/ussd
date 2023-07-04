@@ -1,11 +1,3 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport"content="0;url=C:\Users\HP\3D Objects\ussd&sms\index.php">
-    <title>Document</title>
-</head>
-<body>
 <?php
 $session =$_POST["sessionId"];
 $service =$_POST["serviceCode"];
@@ -18,14 +10,6 @@ if ($text == ""){
     $response ="1. Account Details";
     $response = "2. Phone Number";
 }else if($text =="1"){
-
-
-
-
-
-
-
-    
     $response = "CON Choose Acount Information you want to see\n";
     $response="1. Account Number";
     $response="2. Account Balance";
@@ -45,5 +29,3 @@ header("Content type:text/plane");
 echo $response;
 
 ?>
-</body>
-</html>
